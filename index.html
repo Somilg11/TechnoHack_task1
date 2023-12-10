@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button onclick="clearDisplay()" style="color: orange;">AC</button>
+            <button onclick="backspace()" style="color: orange;"><i class="fa-solid fa-delete-left" style="color: #ffbb00; background-color: rgb(33, 31, 31);"></i></button>
+            <button onclick="appendToDisplay('%')" style="color: orange;">%</button>
+            <button onclick="appendToDisplay('/')" style="color: orange;">/</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('*')" style="color: orange;">x</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('-')" style="color: orange;">-</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('+')" style="color: orange;">+</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button id = "equal" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/e4d2ad1e4e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
